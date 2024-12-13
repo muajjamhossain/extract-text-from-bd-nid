@@ -23,7 +23,7 @@ for detection in result:
 
 user_name = user_name if user_name else "user"
 
-current_date = datetime.now().strftime('%d-%m-%y')
+current_date = datetime.now().strftime('%d-%m-%Y-%H-%M-%S')
 file_name = f"{user_name}-{current_date}.txt"
 
 with open(file_name, 'w', encoding='utf-8') as f:
